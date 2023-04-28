@@ -2,7 +2,7 @@ import SwiftUI
 
 struct AddThingView: View {
   @Environment(\.dismiss) var dismiss
-  @Binding var someThings: ThingStore
+  @ObservedObject var someThings: ThingStore
   @State private var thing = ""
   @FocusState private var thingIsFocused: Bool
 
@@ -30,6 +30,6 @@ struct AddThingView: View {
 
 struct AddThingView_Previews: PreviewProvider {
   static var previews: some View {
-    AddThingView(someThings: .constant(ThingStore()))
+    AddThingView(someThings: ThingStore())
   }
 }
