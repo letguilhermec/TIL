@@ -6,12 +6,12 @@ struct ThingStore {
 
 struct ContentView: View {
   @State private var showAddThing = false
-  let tempThings = ["YOLO", "BTW"]
-
+  @State private var myThings = ThingStore()
+  
   var body: some View {
     NavigationStack {
       VStack(spacing: 20) {
-        ForEach(tempThings, id: \.self) { thing in
+        ForEach(myThings.things, id: \.self) { thing in
           Text(thing)
         }
         Spacer()
