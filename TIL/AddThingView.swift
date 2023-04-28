@@ -9,6 +9,8 @@ struct AddThingView: View {
     VStack {
       TextField("Thing I Learned", text: $thing)
         .textFieldStyle(.roundedBorder)
+        .autocapitalization(.allCharacters)
+        .disableAutocorrection(true)
         .padding()
       Button("Done") {
         someThings.things.append(thing)
