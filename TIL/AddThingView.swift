@@ -10,7 +10,6 @@ struct AddThingView: View {
     VStack {
       TextField("Thing I Learned", text: $thing)
         .textFieldStyle(.roundedBorder)
-        .autocapitalization(.allCharacters)
         .disableAutocorrection(true)
         .focused($thingIsFocused)
         .onAppear {
@@ -23,6 +22,7 @@ struct AddThingView: View {
       }
       Spacer()
     }
+    .environment(\.textCase, nil)
   }
 }
 
