@@ -17,7 +17,9 @@ struct AddThingView: View {
         }
         .padding()
       Button("Done") {
-        someThings.things.append(thing)
+        if thing != "" {
+          someThings.things.append(thing)
+        }
         dismiss()
       }
       Spacer()
