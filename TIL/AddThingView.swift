@@ -4,6 +4,7 @@ struct AddThingView: View {
   @Environment(\.dismiss) var dismiss
   @Binding var someThings: ThingStore
   @State private var thing = ""
+  @FocusState private var thingIsFocused: Bool
 
   var body: some View {
     VStack {
@@ -11,6 +12,10 @@ struct AddThingView: View {
         .textFieldStyle(.roundedBorder)
         .autocapitalization(.allCharacters)
         .disableAutocorrection(true)
+        .focused($thingIsFocused)
+        .onAppear {
+          thingIsFocused = true
+        }
         .padding()
       Button("Done") {
         someThings.things.append(thing)
