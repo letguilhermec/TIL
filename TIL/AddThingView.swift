@@ -11,7 +11,7 @@ struct AddThingView: View {
         .textFieldStyle(.roundedBorder)
         .padding()
       Button("Done") {
-        someThings.things.append("FOMO")
+        someThings.things.append(thing)
         dismiss()
       }
       Spacer()
