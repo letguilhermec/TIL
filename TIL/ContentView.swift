@@ -11,6 +11,10 @@ struct ContentView: View {
   var body: some View {
     NavigationStack {
       VStack(spacing: 20) {
+        if myThings.things.isEmpty {
+          Text("Add acronyms you learn")
+            .foregroundColor(.secondary)
+        }
         ForEach(myThings.things, id: \.self) { thing in
           Text(thing)
         }
