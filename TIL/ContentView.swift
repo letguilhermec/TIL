@@ -31,7 +31,7 @@ struct ContentView: View {
         }
       }
       .sheet(isPresented: $showAddThing) {
-        AddThingView()
+        AddThingView(someThings: $myThings)
       }
     }
   }

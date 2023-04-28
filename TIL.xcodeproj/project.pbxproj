@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD9D53E328F811AD00CC122B /* TILApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D53E228F811AD00CC122B /* TILApp.swift */; };
-		CD9D53E528F811AD00CC122B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D53E428F811AD00CC122B /* ContentView.swift */; };
+		B28E643429FC379F00652F2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D53E428F811AD00CC122B /* ContentView.swift */; };
+		B28E643529FC37A400652F2F /* TILApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D53E228F811AD00CC122B /* TILApp.swift */; };
 		CD9D53E728F811AE00CC122B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9D53E628F811AE00CC122B /* Assets.xcassets */; };
 		CD9D53EA28F811AE00CC122B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9D53E928F811AE00CC122B /* Preview Assets.xcassets */; };
 		CD9D53F128F8122200CC122B /* AddThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D53F028F8122200CC122B /* AddThingView.swift */; };
@@ -167,8 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9D53E528F811AD00CC122B /* ContentView.swift in Sources */,
-				CD9D53E328F811AD00CC122B /* TILApp.swift in Sources */,
+				B28E643429FC379F00652F2F /* ContentView.swift in Sources */,
+				B28E643529FC37A400652F2F /* TILApp.swift in Sources */,
 				CD9D53F128F8122200CC122B /* AddThingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
